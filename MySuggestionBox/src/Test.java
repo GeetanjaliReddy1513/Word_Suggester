@@ -67,26 +67,4 @@ class Test {
         return words;
     }
 
-    public static void main(String[] args) {
-//        Trie t=new Trie();
-        Test t = new Test();
-        Node root = new Node();
-        t.insertWord(root, "arrest");
-        t.insertWord(root, "apple");
-
-        t.insertWord(root, "affection");
-
-        t.insertWord(root, "app");
-        t.insertWord(root, "ball");
-
-        ArrayList<String> a = t.autoSuggest(root, "affecthjgh");
-        if(a==null)
-            System.out.println("ya");
-        if (a != null) {
-            for (String x : a) {
-                System.out.println(x);
-            }
-        }
-    }
-
 }
